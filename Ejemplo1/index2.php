@@ -11,12 +11,12 @@ class CalcularArea {
         // Calculamos area del cuadrado
         if( $tipo == "Cuadrado" ){
             $area = pow($lado, 2);
-            echo "Area del ${tipo}: ${area} \n";
+            echo "Área del ${tipo}: ${area} \n";
         }
         // Calculamos area del triangulo
         if ( $tipo == "Triangulo" ) {
             $area = ($base * $altura)/2;
-            echo "Area del ${tipo}: ${area} \n";
+            echo "Área del ${tipo}: ${area} \n";
             
         }
         

@@ -18,13 +18,13 @@
         public function area() {
             // Calculamos el area del cuadrado
             $area = pow($this->lado, 2);
-            return "Area del Cuadrado: ${area} \n";
+            return "Área del Cuadrado: ${area} \n";
         }
     }
 
     /**
-     * Creamos la clase Cuadrado que contiene el metodo
-     * para calcular el area de un cuadrado
+     * Creamos la clase Triangulo que contiene el metodo
+     * para calcular el area de un triangulo
      */
     class Triangulo implements calculaArea {
         public $base;
@@ -38,12 +38,13 @@
         public function area() {
             // Calculasmos el area de un  triangulo
             $area = ($this->base * $this->altura)/2;
-            return "Area del Triangulo: ${area} \n";
+            return "Área del Triangulo: ${area} \n";
         }
     }
 
+
     class CalcularArea {
-        public function area($instancias){
+        public function area( $instancias ){
             foreach($instancias as $instancia) {
                 echo $instancia->area();
             }
@@ -57,4 +58,4 @@ $instancias = [
     new Triangulo(6, 6)
 ];
 $calcularArea = new CalcularArea();
-$calcularArea->area($instancias);
+$calcularArea->area( $instancias );

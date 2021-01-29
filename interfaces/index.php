@@ -17,13 +17,13 @@
     }
 
     /**
-     * Para usar una interfas se usa implements
-     * y estamos usando gasolina por que ya extiende de Auto (Herencia)
+     * Para usar una interfas dentro de una clase se usa palabra implements.
+     * Implementamos gasolina por que ya extiende de Auto (Herencia)
      */
     class Deportivo implements gasolina {
         // Creamos un metodo que solo imprime hola
         public function ver(){
-            echo "hola";
+            echo "Hola pikachu";
         }
 
         /**
